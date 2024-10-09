@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Set font for entire page */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    line-height: 1.6; /* Increase line height */
+    color: #333; /* Set text color */
+}
+
+header {
+    background: blue; /* Background color for header */
+    color: white; /* Text color for header */
+    padding: 15px 20px; /* Padding inside header */
+    text-align: center; /* Center-align text in header */
+}
+
+nav ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    display: inline; /* Display items in a line */
+    margin: 0 15px; /* Space between navigation items */
+}
+
+nav ul li a {
+    color: white; /* Text color for navigation links */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Bold link text */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+main {
+    padding: 20px; /* Padding for main content area */
+}
+
+/* Home Page Styles */
+.home-intro {
+    text-align: center; /* Align text to center for intro section */
+    margin-top: 50px; /* Margin above the section */
+}
+
+.home-intro h1 {
+    font-size: 2.5em; /* Large font size for main heading */
+}
+
+.home-intro p {
+    font-size: 1.2em; /* Slightly large font for paragraph text */
+}
+
+.home-intro a {
+    background: blue; /* Background color for the link button */
+    color: white; /* Text color for the link button */
+    padding: 10px 20px; /* Padding inside the link button */
+    text-decoration: none; /* Remove underline from link */
+    border-radius: 5px; /* Rounded corners for the button */
+}
+
+/* About Page Styles */
+.about {
+    display: flex; /* Display using flex layout */               
+    align-items: flex-start; /* Align items at the start */     
+    margin: 0; /* Remove default margin */                   
+    padding: 20px; /* Padding for the about section */               
+}
+
+.profile-photo {
+    border-radius: 50%; /* Profile photo radius */
+    width: 50px; /* Set width of profile photo */                
+    height: 50px; /* Set height of profile photo */               
+    margin-right: 20px; /* Space to the right of the photo */         
+}
+
+.about h2 {
+    font-size: 2em; /* Font size for the about heading */
+    margin: 0 0 10px; /* Margin below the heading */        
+    display: block; /* Heading on new line */              
+}
+
+.about p {
+    max-width: 300px; /* Limit paragraph width */           
+    margin: 10px 1; /* Margin around paragraph */              
+    display: block; /* Paragraph on new line */             
+    text-align: left; /* Align text to the left */           
+}
+
+/* Contact Page Styles */
+.contact {
+    max-width: 600px; /* Limit contact section width */
+    margin: 0 auto; /* Center the contact section */
+}
+
+.contact h2 {
+    text-align: center; /* Align text to the center */
+}
+
+form {
+    display: flex; /* Display using flex layout */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+form label {
+    margin: 10px 0 5px; /* Margin around labels */
+}
+
+form input,
+form textarea {
+    padding: 10px; /* Padding inside input and textarea */
+    border: 1px solid #ccc; /* Border for input and textarea */
+    border-radius: 5px; /* Border radius */
+}
+
+form button {
+    margin-top: 10px; /* Space above the button */
+    padding: 10px; /* Padding inside the button */
+    background: blue; /* Background color for button */
+    color: white; /* Text color for button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Border radius for button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+form button:hover {
+    background: blue; /* Maintain the background color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column; /* Stack about section elements vertically on small screens */
+        align-items: center; /* Align text to the center */
+}
+    }
+
+    .profile-photo {
+        margin-bottom: 20px; /* Space below profile photo */
+    }
+
+    nav ul li {
+        display: block; /* Stack navigation items vertically on small screens */
+        margin: 10px 0; /* Margin between items */
+    }
+}
