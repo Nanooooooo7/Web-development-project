@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Design settings -->
+    <title>Contact Me</title> <!-- Webpage title -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> <!-- Navigation link to home page -->
+                <li><a href="about.html">About</a></li> <!-- Navigation link to about page -->
+                <li><a href="contact.html">Contact</a></li> <!-- Navigation link to contact page -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact"> <!-- Section for contact -->
+            <h2>Contact Me</h2> <!-- Section heading -->
+            <p>Feel free to reach out at any time</p>
+            <form id="contactForm"> <!-- Form for user input -->
+                <label for="name">Name:</label> <!-- Label for name input -->
+                <input type="text" id="name" name="name" required> <!-- Input field for name -->
+                
+                <label for="email">Email:</label> <!-- Label for email input -->
+                <input type="email" id="email" name="email" required> <!-- Input field for email -->
+                
+                <label for="message">Message:</label> <!-- Label for message textarea -->
+                <textarea id="message" name="message" required></textarea> <!-- Textarea field for message -->
+                
+                <button type="submit">Submit</button> <!-- Submit button for the form -->
+            </form>
+        </section>
+    </main>
+    <script src="js/form.js"></script> <!-- Link to JavaScript file for form handling -->
+</body>
+</html>
+
